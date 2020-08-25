@@ -1,3 +1,7 @@
+My repo for working through [Chris Biscardi's](https://christopherbiscardi.com) [Composable Gatsby Themes Course](https://egghead.io/courses/composable-gatsby-themes)...
+
+---
+
 # Composing Gatsby Themes
 
 ## An advanced workshop
