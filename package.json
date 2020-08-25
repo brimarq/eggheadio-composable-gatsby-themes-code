@@ -1,8 +1,8 @@
 {
-  "name": "eggheadio-advanced-gatsby-themes-workshop-code",
+  "name": "eggheadio-composable-gatsby-themes-code",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/brimarq/eggheadio-advanced-gatsby-themes-workshop-code.git",
+  "repository": "https://github.com/brimarq/eggheadio-composable-gatsby-themes-code.git",
   "author": "Brian Marquis <rbmarquis.dev@gmail.com>",
   "license": "MIT",
   "private": true,
