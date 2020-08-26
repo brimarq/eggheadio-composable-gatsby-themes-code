@@ -2,5 +2,9 @@
   "name": "gatsby-theme-marketing",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@theme-ui/presets": "^0.2.44",
+    "theme-ui": "^0.2.44"
+  }
 }
