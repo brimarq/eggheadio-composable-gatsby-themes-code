@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "@theme-ui/presets": "^0.2.44",
-    "theme-ui": "^0.2.44"
+    "theme-ui": "^0.2.44",
+    "isolated-theme-ui": "^1.0.1"
   }
 }
