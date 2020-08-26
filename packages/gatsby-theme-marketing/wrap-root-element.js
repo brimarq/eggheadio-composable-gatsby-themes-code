@@ -1,6 +1,6 @@
 import React from "react";
-import { ThemeProvider } from "theme-ui";
-import { swiss } from "@theme-ui/presets";
+import { MyThemeContext } from "./src/context";
+import theme from "./src/theme";
 import * as H from './src/components/headings'
 import * as Text from './src/components/text'
 
@@ -10,7 +10,12 @@ const components = {
 };
 
 export default ({ element }) => (
-  <ThemeProvider theme={swiss} components={components}>
+  <MyThemeContext.Provider 
+    values={{
+      theme, 
+      components
+    }}
+  >
     {element}
-  </ThemeProvider>
+  </MyThemeContext.Provider>
 );
