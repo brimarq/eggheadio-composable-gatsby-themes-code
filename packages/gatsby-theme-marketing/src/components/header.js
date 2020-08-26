@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { Link } from "gatsby";
-import { jsx } from "theme-ui";
+import { jsx } from "../context";
 
 const NavItem = props => (
   <li>

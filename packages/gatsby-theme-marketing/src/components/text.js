@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui";
+import { jsx } from "../context";
 import { Link as GatsbyLink } from "gatsby";
 
 export const p = props => (

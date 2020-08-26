@@ -1,6 +1,6 @@
 /** @jsx jsx */
 /* eslint jsx-a11y/heading-has-content: 0 */
-import { jsx } from "theme-ui";
+import { jsx } from "../context";
 
 export const h1 = props => (
   <h1 {...props} sx={{ variant: "textStyles.display", color: "primary" }} />
