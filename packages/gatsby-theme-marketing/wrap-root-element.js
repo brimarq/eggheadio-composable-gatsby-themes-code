@@ -11,7 +11,7 @@ const components = {
 
 export default ({ element }) => (
   <MyThemeContext.Provider 
-    values={{
+    value={{
       theme, 
       components
     }}
