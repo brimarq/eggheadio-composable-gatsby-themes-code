@@ -1,3 +1,3 @@
-import { swiss } from "@theme-ui/presets";
+import { funk } from "@theme-ui/presets";
 
-export default swiss;
+export default funk;
