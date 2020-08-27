@@ -11,7 +11,16 @@ import * as H from "../components/headings";
 import * as Text from "../components/text";
 
 const client = Client.buildClient({
-  domain: "corgico-dev.myshopify.com",
+  /**
+   * Using GATSBY_ prefix on an env variable automatically injects it into the 
+   * client-side bundle. If the prefix is not used, the variable must be manually 
+   * passed-in, or it won't be included at all. This allows the use of secrets in 
+   * gatsby node w/o including them in the client-side bundle. 
+   * NOTE: If secrets are passed directly into the options of a theme with a  
+   * gatsby-browser.js file, they WILL BE LEAKED TO THE CLIENT. Using process.env 
+   * prevents this problem.
+   */
+  domain: process.env.GATSBY_SHOPIFY_DOMAIN,
   storefrontAccessToken: process.env.GATSBY_SHOPIFY_ACCESS_TOKEN
 });
 
