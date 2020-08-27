@@ -1,9 +1,7 @@
-const path = require(`path`);
-
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
-  const wordPressPostTemplate = path.resolve(`src/templates/wordpress-blog-post.js`);
-  // Query for Mdx nodes to use in creating pages.
+  const wordPressPostTemplate = require.resolve(`./src/templates/wordpress-blog-post.js`);
+
   return graphql(`
     query loadPagesQuery {
       allWordpressPost {
