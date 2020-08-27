@@ -6,17 +6,17 @@
   "dependencies": {
     "@emotion/core": "^10.0.21",
     "@theme-ui/presets": "^0.2.44",
+    "gatsby-image": "^2.2.29",
+    "gatsby-plugin-sharp": "^2.2.32",
+    "gatsby-source-shopify": "^3.0.24",
+    "gatsby-transformer-sharp": "^2.2.23",
+    "shopify-buy": "^2.8.0",
     "theme-ui": "^0.2.44",
     "isolated-theme-ui": "^1.0.1"
   },
   "peerDependencies": {
     "gatsby": "^2.16.5",
-    "gatsby-image": "^2.2.29",
-    "gatsby-plugin-sharp": "^2.2.32",
-    "gatsby-source-shopify": "^3.0.24",
-    "gatsby-transformer-sharp": "^2.2.23",
     "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "shopify-buy": "^2.8.0"
+    "react-dom": "^16.10.2"
   }
 }
