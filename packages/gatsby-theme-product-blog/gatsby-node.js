@@ -1,3 +1,5 @@
+const crypto = require("crypto");
+
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTyes } = actions;
   createTypes(`
@@ -44,5 +46,36 @@ exports.createPages = ({ graphql, actions }) => {
         }
       })
     })
+  });
+};
+
+exports.onCreateNode = ({ node, actions, createNodeId }) => {
+  const { createNode } = actions;
+
+  if (node.internal.type !== "wordpress__POST") {
+    return;
+  }
+
+  const fieldData = {
+    title: node.title,
+    slug: node.slug,
+    content: node.content,
+    excerpt: node.excerpt
+  };
+
+  createNode({
+    id: createNodeId(`${node.id} >>> BlogPostWordPress`),
+    ...fieldData, 
+    parent: node.id,
+    children: [],
+    internal: {
+      type: `BlogPostWordPress`,
+      contentDigest: crypto
+        .createHash(`md5`)
+        .update(JSON.stringify(fieldData))
+        .digest(`hex`),
+      content: JSON.stringify(fieldData), // optional 
+      description: `BlogPostWordPress: "implements the BlogPost interface for WordPress posts"` // optional
+    }
   });
 };
