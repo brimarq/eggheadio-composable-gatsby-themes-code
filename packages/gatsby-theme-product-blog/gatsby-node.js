@@ -20,14 +20,10 @@ exports.createPages = ({ graphql, actions }) => {
 
   return graphql(`
     query loadPagesQuery {
-      allWordpressPost {
+      allBlogPost {
         nodes {
           id
-          date
-          title
           slug
-          content
-          excerpt
         }
       }
     }
@@ -37,7 +33,7 @@ exports.createPages = ({ graphql, actions }) => {
     }
 
     // Create blog post pages.
-    result.data.allWordpressPost.nodes.forEach( node => {
+    result.data.allBlogPost.nodes.forEach( node => {
       createPage({
         path: `/blog/${node.slug}`,
         component: wordPressPostTemplate,
