@@ -16,7 +16,7 @@ export default ({ data }) => {
       <h1
         sx={{ variant: "textStyles.display", color: "primary" }}
         dangerouslySetInnerHTML={{
-          __html: data.wordpressPost.title
+          __html: data.blogPost.title
         }}
       />
       <div
@@ -37,7 +37,7 @@ export default ({ data }) => {
           "& li": { color: "text", fontFamily: "body", lineHeight: "body" }
         }}
         dangerouslySetInnerHTML={{
-          __html: data.wordpressPost.content
+          __html: data.blogPost.content
         }}
       />
     </div>
@@ -46,7 +46,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query WordPressBlogPostQuery($id: String!) {
-    wordpressPost(id: { eq: $id }) {
+    blogPost(id: { eq: $id }) {
       title
       content
     }
