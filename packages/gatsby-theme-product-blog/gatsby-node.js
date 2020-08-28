@@ -1,7 +1,7 @@
 const crypto = require("crypto");
 
 exports.createSchemaCustomization = ({ actions }) => {
-  const { createTyes } = actions;
+  const { createTypes } = actions;
   createTypes(`
     type BlogPostWordPress implements Node & BlogPost 
     @childOf(types: ["wordpress__POST"]) {
