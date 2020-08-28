@@ -1,3 +1,17 @@
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTyes } = actions;
+  createTypes(`
+    type BlogPostWordPress implements Node & BlogPost 
+    @childOf(types: ["wordpress__POST"]) {
+      id: ID! 
+      title: String! 
+      slug: String! 
+      excerpt: String 
+      content: String! 
+    }
+  `);
+};
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
   const wordPressPostTemplate = require.resolve(`./src/templates/wordpress-blog-post.js`);
