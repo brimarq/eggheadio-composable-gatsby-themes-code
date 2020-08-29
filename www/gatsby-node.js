@@ -57,7 +57,7 @@ exports.createPages = ({ graphql, actions }) => {
   // Query for Mdx nodes to use in creating pages.
   return graphql(`
     query loadPagesQuery {
-      allMdx {
+      allBlogPost(filter: { collection: { eq: "developer" } }) {
         nodes {
           id
           frontmatter {
@@ -72,9 +72,9 @@ exports.createPages = ({ graphql, actions }) => {
     }
 
     // Create blog post pages.
-    result.data.allMdx.nodes.forEach(node => {
+    result.data.allBlogPost.nodes.forEach(node => {
       createPage({
-        path: `/dev-blog/${node.frontmatter.slug}`,
+        path: `/dev-blog/${node.slug}`,
         component: blogPostTemplate,
         context: {
           id: node.id
