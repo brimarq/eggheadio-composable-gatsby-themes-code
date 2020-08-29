@@ -20,7 +20,7 @@ exports.createPages = ({ graphql, actions }) => {
 
   return graphql(`
     query loadPagesQuery {
-      allBlogPost {
+      allBlogPost(filter: { collection: { eq: "product" } }) {
         nodes {
           id
           slug
