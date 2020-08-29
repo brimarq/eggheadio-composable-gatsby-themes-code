@@ -56,7 +56,8 @@ exports.onCreateNode = ({ node, actions, createNodeId }) => {
     title: node.title,
     slug: node.slug,
     content: node.content,
-    excerpt: node.excerpt
+    excerpt: node.excerpt,
+    collection: "product"
   };
 
   createNode({

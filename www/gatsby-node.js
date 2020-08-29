@@ -94,7 +94,8 @@ exports.onCreateNode = ({ node, actions, createNodeId }) => {
 
   const fieldData = {
     title: node.frontmatter.title,
-    slug: node.frontmatter.slug
+    slug: node.frontmatter.slug,
+    collection: "developer"
   };
 
   createNode({
