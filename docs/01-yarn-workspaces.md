@@ -1,13 +1,5 @@
 # Composing Gatsby Themes
 
-<div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-
-<a href="../README.md">👈 README</a>
-
-<a href="./02-a-marketing-theme.md">Creating our first theme 👉</a>
-
-</div>
-
 ## Exercise 01: Setting up Yarn Workspaces
 
 ### Step 01: Create Folders
@@ -145,13 +137,3 @@ Then, to check to make sure, we can run `develop` in the `www` workspace using `
 ```shell
 yarn workspace www develop
 ```
-
----
-
-<div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-
-<a href="./README.md">👈 README</a>
-
-<a href="./02-a-marketing-theme.md">Creating our first theme 👉</a>
-
-</div>

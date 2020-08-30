@@ -1,10 +1,5 @@
 # Composing Gatsby Themes
 
-<div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-  <a href="./01-yarn-workspaces.md">👈 Setting up Yarn workspaces</a>
-  <a href="./03-a-shopify-theme.md">Creating our second theme 👉</a>
-</div>
-
 ## Exercise 02: Creating our first theme
 
 Our first theme is gatsby-theme-marketing. These are the pages that our marketing team will control, whether through contractors or their own work. By putting these files into a separate theme we enable the marketing team to have autonomy over the pages that they control.
@@ -388,9 +383,3 @@ export default deep
 ```
 
 That's it. The theme was installed without affecting the current site and we can also override the token set using a single file.  
-
----
-<div style="display: flex; justify-content: space-between; margin-top: 20px;">
-  <a href="./01-yarn-workspaces.md">👈 Setting up Yarn workspaces</a>
-  <a href="./03-a-shopify-theme.md">Creating our second theme 👉</a>
-</div>

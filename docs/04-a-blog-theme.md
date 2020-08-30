@@ -1,10 +1,5 @@
 # Composing Gatsby Themes
 
-<div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-  <a href="./03-a-shopify-theme.md">👈 Creating our second theme</a>
-  <a href="./05-a-blog-interface.md">Creating a blog interface 👉</a>
-</div>
-
 ## Exercise 04: Creating our third theme
 
 Our next theme will be a set of blog themes that supports multiple blogs from a core data abstraction. This is where we'll start to get into schema customization as we will support both the product blog and the developer blog using the same core data theme by creating a set of child themes. Let's start with `gatsby-theme-product-blog`.
@@ -257,9 +252,3 @@ export default deep;
 ```
 
 That's it. The theme was installed without affecting the current site and we can also override the token set using a single file.  
-
----
-<div style="display: flex; justify-content: space-between; margin-top: 20px;">
-  <a href="./03-a-shopify-theme.md">👈 Creating our second theme</a>
-  <a href="./05-a-blog-interface.md">Creating a blog interface 👉</a>
-</div>

@@ -1,9 +1,5 @@
 # Composing Gatsby Themes
 
-<div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-  <a href="./05-a-blog-interface.md">👈 Creating a blog interface</a>
-</div>
-
 ## Exercise 06: Creating MDX posts from proxy nodes
 
 Now that we have a blog interface, we can apply the same approach to Mdx nodes.
@@ -298,8 +294,3 @@ export const query = graphql`
 ```
 
 Whew. Now we have two distinct blogs running off the same data model. In fact, if we back up a bit we _could_ render all of the posts on one or both of the collections. It doesn't matter what node types we back each collection with as long as we have logic to render them. 
-
----
-<div style="display: flex; justify-content: space-between; margin-top: 20px;">
-  <a href="./05-a-blog-interface.md">👈 Creating a blog interface</a>
-</div>

@@ -1,10 +1,5 @@
 # Composing Gatsby Themes
 
-<div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-  <a href="./02-a-marketing-theme.md">👈 Creating our first theme</a>
-  <a href="./04-a-blog-theme.md">Creating our third theme 👉</a>
-</div>
-
 ## Exercise 03: Creating our second theme
 
 Our next theme will be a shopify theme. This will be slightly more interesting than the marketing theme since the shopify theme uses additional plugins.
@@ -320,9 +315,3 @@ export default deep;
 ```
 
 That's it. The theme was installed without affecting the current site and we can also override the token set using a single file.  
-
----
-<div style="display: flex; justify-content: space-between; margin-top: 20px;">
-  <a href="./02-a-marketing-theme.md">👈 Creating our first theme</a>
-  <a href="./04-a-blog-theme.md">Creating our third theme 👉</a>
-</div>
