@@ -60,9 +60,7 @@ exports.createPages = ({ graphql, actions }) => {
       allBlogPost(filter: { collection: { eq: "developer" } }) {
         nodes {
           id
-          frontmatter {
-            slug
-          }
+          slug
         }
       }
     }
